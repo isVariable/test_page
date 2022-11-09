@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="style.css">
+	<title>CreepJS</title>
+	<script src="creep.js" defer></script>
+</head>
+<body>
+	<div class="venator__wrapper">
+		<div class="venator">
+			<div class="venator__container">
+				<div class="venator__inner">
+					<div class="venator__logo logo">
+						<img class="logo__img" src="assets/img/logo.png" alt="venator logo">
+						<h1 class="logo__title">VENATOR</h1>
+					</div>
+					<div class="venator__main">
+						<div class="venator__network network">
+							<h2 class="network__title">Network info</h2>
+							<div class="network__container">
+								<ul class="network__list">
+									<li class="network__item">
+										<p class="network__text">IP:<span class="network__text--span"
+																		  id="ip"></span></p>
+									</li>
+									<li class="network__item">
+										<p class="network__text">DNS:<span class="network__text--span"
+																		   id="dns"></span>
+										</p>
+									</li>
+									<li class="network__item">
+										<p class="network__text">ISP:<span class="network__text--span"
+																		   id="isp"></span>
+										</p>
+									</li>
+									<li class="network__item">
+										<p class="network__text">Hostname:<span class="network__text--span" id="hostname"></span>
+										</p>
+									</li>
+									<li class="network__item">
+										<p class="network__text">Type:<span class="network__text--span"
+																			id="typeIP"></span>
+										</p>
+									</li>
+									<li class="network__item">
+										<p class="network__text">Timezone:<span class="network__text--span" id="timezone"></span>
+										</p>
+									</li>
+									<li class="network__item">
+										<p class="network__text">Proxy:<span class="network__text--span"
+																			 id="proxy"></span>
+										</p>
+									</li>
+									<li class="network__item">
+										<p class="network__text">VPN:<span class="network__text--span" id="vpn"></span>
+										</p>
+									</li>
+									<li class="network__item">
+										<p class="network__text">Tor:<span class="network__text--span" id="tor"></span>
+										</p>
+									</li>
+									<li class="network__item">
+										<p class="network__text">Anonymizer:<span class="network__text--span"
+																				  id="anonymizer"></span></p>
+									</li>
+									<li class="network__item">
+										<p class="network__text">Blacklist:<span class="network__text--span" id="blacklist"></span>
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="venator__device device">
+							<h2 class="device__title">Device info</h2>
+							<div class="device__container">
+								<ul class="device__list">
+									<li class="device__item">
+										<p class="device__text">UserAgent:<span class="device__text--span" id="userAgent"></span></p>
+									</li>
+									<li class="device__item">
+										<p class="device__text">Browser:<span class="device__text--span" id="browser"></span></p>
+									</li>
+									<li class="device__item">
+										<p class="device__text">Language:<span class="device__text--span" id="lang"></span>
+										</p>
+									</li>
+									<li class="device__item">
+										<p class="device__text">Device:<span class="device__text--span" id="device"></span></p>
+									</li>
+									<li class="device__item">
+										<p class="device__text">System:<span class="device__text--span" id="system"></span></p>
+									</li>
+									<li class="device__item">
+										<p class="device__text">Hardware Concurrency:<span
+												class="device__text--span" id="hardware"></span>
+										</p>
+									</li>
+									<li class="device__item">
+										<p class="device__text">Device Memory:<span class="device__text--span" id="memory"></span></p>
+									</li>
+									<li class="device__item">
+										<p class="device__text">Screen:<span class="device__text--span" id="screen"></span></p>
+									</li>
+								</ul>
+								<div class="device__extented extented">
+									<h2 class="extented__title">Extented Device info</h2>
+									<div class="extented__container">
+										<ul class="extented__list">
+											<li class="extented__item">
+												<p class="extented__text">appName:<span
+														class="extented__text--span" id="appName"></span>
+												</p>
+											</li>
+											<li class="extented__item">
+												<p class="extented__text">appVersion:<span class="extented__text--span" id="appVersion"></span>
+												</p>
+											</li>
+											<li class="extented__item">
+												<p class="extented__text">appCodeName:<span
+														class="extented__text--span" id="appCodeName"></span></p>
+											</li>
+											<li class="extented__item">
+												<p class="extented__text">pdfViewerEnabled: <span
+														class="extented__text--span" id="pdfViewer"></span></p>
+											</li>
+											<li class="extented__item">
+												<p class="extented__text">cookieEnabled:<span
+														class="extented__text--span" id="cookie"></span></p>
+											</li>
+											<li class="extented__item">
+												<p class="extented__text">plugins:<span class="extented__text--span" id="plugins"></span>
+												</p>
+											</li>
+											<li class="extented__item">
+												<p class="extented__text">platform:<span
+														class="extented__text--span" id="platform"></span>
+												</p>
+											</li>
+											<li class="extented__item">
+												<p class="extented__text">doNotTrack:<span
+														class="extented__text--span" id="doNotTrack"></span></p>
+											</li>
+											<li class="extented__item">
+												<p class="extented__text">webdriver:<span
+														class="extented__text--span" id="webDriver"></span>
+												</p>
+											</li>
+											<li class="extented__item">
+												<p class="extented__text">productSub:<span
+														class="extented__text--span" id="productSub"></span></p>
+											</li>
+											<li class="extented__item">
+												<p class="extented__text">product:<span
+														class="extented__text--span" id="product"></span>
+												</p>
+											</li>
+											<li class="extented__item">
+												<p class="extented__text">maxTouchPoints:<span
+														class="extented__text--span" id="touch"></span>
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="venator__geolocation geolocation">
+							<h2 class="geolocation__title">Geolocation API</h2>
+							<div class="geolocation__container">
+								<ul class="geolocation__list">
+									<li class="geolocation__item">
+										<p class="geolocation__text">Cache Age:<span class="geolocation__text--span" id="cache"></span>
+										</p>
+									</li>
+									<li class="geolocation__item">
+										<p class="geolocation__text">Latitude:<span
+												class="geolocation__text--span" id="latitude"></span></p>
+									</li>
+									<li class="geolocation__item">
+										<p class="geolocation__text">Longitude:<span class="geolocation__text--span" id="longitude"></span>
+										</p>
+									</li>
+									<li class="geolocation__item">
+										<p class="geolocation__text">Accuracy:<span class="geolocation__text--span" id="accuracy"></span>
+										</p>
+									</li>
+									<li class="geolocation__item">
+										<p class="geolocation__text">Reverse Geocoding:<span
+												class="geolocation__text--span" id="geocoding"></span>
+										</p>
+									</li>
+									<li class="geolocation__item">
+										<p class="geolocation__text">ZIP:<span class="geolocation__text--span" id="zip"></span>
+										</p>
+									</li>
+									<li class="geolocation__item">
+										<p class="geolocation__text">Country:<span
+												class="geolocation__text--span" id="country"></span>
+										</p>
+									</li>
+								</ul>
+								<div class="geolocation__maps maps">
+									<h2 class="maps__title">Google Maps:</h2>
+									<div class="maps__container">
+										<img class="maps__map" src="assets/img/map.png" alt="">
+									</div>
+								</div>
+							</div>
+	
+						</div>
+						<div class="venator__webgl webgl">
+							<h2 class="webgl__title">WebGL</h2>
+							<div class="webgl__container">
+								<ul class="webgl__list">
+									<li class="webgl__item">
+										<p class="webgl__text">images:<span class="webgl__text--span" id="images"></span></p>
+									</li>
+									<li class="webgl__item">
+										<p class="webgl__text">pixels:<span class="webgl__text--span" id="pixels"></span></p>
+									</li>
+									<li class="webgl__item">
+										<p class="webgl__text">GPU:
+											<span class="webgl__text--span" id="gpu"></span>
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="venator__fonts fonts">
+							<h2 class="fonts__title">Fonts</h2>
+							<div class="fonts__container">
+								<p class="fonts__text" id="fonts"></p>
+							</div>
+						</div>
+						<div class="venator__battery battery">
+							<h2 class="battery__title">Battery</h2>
+							<div class="battery__container">
+								<ul class="battery__list">
+									<li class="battery__item">
+										<p class="battery__text">Level:<span class="battery__text--span" id="level"></span></p>
+									</li>
+									<li class="battery__item">
+										<p class="battery__text">Charging:<span class="battery__text--span" id="charging"></span></p>
+									</li>
+									<li class="battery__item">
+										<p class="battery__text">Charge Time:<span
+												class="battery__text--span" id="chargeTime"></span></p>
+									</li>
+									<li class="battery__item">
+										<p class="battery__text">Discharge Time:<span
+												class="battery__text--span" id="dischargeTime"></span></p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="venator__plugins plugins">
+							<h2 class="plugins__title">Plugins</h2>
+							<div class="plugins__container">
+								<ul class="plugins__list">
+									<li class="plugins__item">
+										<p class="plugins__text">Name:<span class="plugins__text--span"></span>
+										</p>
+									</li>
+									<li class="plugins__item">
+										<p class="plugins__text">Description:<span class="plugins__text--span"></span>
+										</p>
+									</li>
+									<li class="plugins__item">
+										<p class="plugins__text">Filename:<span
+												class="plugins__text--span"></span></p>
+									</li>
+									<li class="plugins__item">
+										<p class="plugins__text">Name:<span class="plugins__text--span"></span>
+										</p>
+									</li>
+									<li class="plugins__item">
+										<p class="plugins__text">Description:<span class="plugins__text--span"></span>
+										</p>
+									</li>
+									<li class="plugins__item">
+										<p class="plugins__text">Filename:<span
+												class="plugins__text--span"></span></p>
+									</li>
+									<li class="plugins__item">
+										<p class="plugins__text">Name:<span class="plugins__text--span"></span>
+										</p>
+									</li>
+									<li class="plugins__item">
+										<p class="plugins__text">Description:<span class="plugins__text--span"></span>
+										</p>
+									</li>
+									<li class="plugins__item">
+										<p class="plugins__text">Filename:<span
+												class="plugins__text--span"></span></p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="venator__canvas canvas">
+							<h2 class="canvas__title">Canvas</h2>
+							<div class="canvas__container">
+								<ul class="canvas__list">
+									<ul class="canvas__list">
+										<li class="canvas__item">
+											<p class="canvas__text">File Size:<span
+													class="canvas__text--span" id="fileSize"></span>
+											</p>
+										</li>
+										<li class="canvas__item">
+											<p class="canvas__text">Image File Details: <span
+													class="canvas__text--span" id="imageFile"></span>
+											</p>
+										</li>
+										<li class="canvas__item">
+											<p class="canvas__text">Number of Colors:<span
+													class="canvas__text--span" id="numberOfColors"></span>
+											</p>
+										</li>
+										<li class="canvas__item">
+											<p class="canvas__text">PNG Hash:<span class="canvas__text--span" id="pngHash"></span>
+											</p>
+										</li>
+									</ul>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

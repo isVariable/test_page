@@ -1,0 +1,569 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #949494;
+}
+
+body {
+    background: #000000;
+}
+
+h2 {
+    margin-bottom: 10px;
+    margin-left: 60px;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #FFF;
+
+}
+
+
+.venator__wrapper {
+}
+
+.venator {
+}
+
+.venator__container {
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+.venator__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.venator__logo {
+}
+
+.logo__title {
+    font-family: Earth Orbiter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 1.4em;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo__img {
+}
+
+.logo__title {
+}
+
+.venator__main {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 205px 145px 140px 100px;
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+}
+
+.venator__network {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.network {
+}
+
+.network__title {
+    position: relative;
+}
+
+.network__title::before {
+    position: absolute;
+    content: "";
+    background: url(assets/img/network.png);
+    height: 20px;
+    width: 20px;
+    top: -2px;
+    left: -27px;
+}
+
+.network__container {
+    padding: 20px;
+    height: 100%;
+    background: #1E1E1E;
+    border-radius: 35px;
+}
+
+.network__list {
+    display: flex;
+    max-height: 135px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.network__item>p {
+}
+
+.network__item + .network__item {
+    margin-top: 10px;
+}
+
+.network__text {
+    position: relative;
+    display: inline-block;
+}
+
+#tor::before {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6px;
+    background: red;
+    border-radius: 50px;
+    top: 5px;
+    right: -12px;
+}
+#blacklist::before{
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6px;
+    background: red;
+    border-radius: 50px;
+    top: 5px;
+    right: -12px;
+}
+
+.network__text--span {
+    color: #FFF;
+}
+
+.venator__device {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.device {
+
+}
+
+.device__title {
+    position: relative;
+
+}
+
+.device__title::before {
+    position: absolute;
+    content: "";
+    background: url(assets/img/device.png);
+    height: 20px;
+    width: 20px;
+    top: -2px;
+    left: -27px;
+}
+
+.device__container {
+    padding: 30px;
+    height: 100%;
+    background: #1E1E1E;
+    border-radius: 35px;
+}
+
+.device__list {
+    list-style-type: none;
+}
+
+.device__item {
+}
+
+.device__item + .device__item {
+    margin-top: 10px;
+}
+
+.device__text {
+}
+
+.device__text--span {
+    color: #FFF;
+}
+
+.device__extented {
+
+}
+
+.extented {
+    margin-top: 35px;
+}
+
+.extented__title {
+    position: relative;
+    margin-left: 32px;
+}
+
+.extented__title::before {
+    position: absolute;
+    content: "";
+    background: url(assets/img/device.png);
+    height: 20px;
+    width: 20px;
+    top: -2px;
+    left: -27px;
+}
+
+.extented__container {
+}
+
+.extented__list {
+    display: flex;
+    max-height: 80px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.extented__item {
+    max-width: 215px;
+}
+
+.extented__item + .extented__item {
+    margin-top: 5px;
+}
+
+.extented__text {
+}
+
+.extented__text--span {
+    color: #FFF;
+}
+
+.venator__geolocation {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.geolocation {
+
+}
+
+.geolocation__title {
+    position: relative;
+}
+
+.geolocation__title::before {
+    position: absolute;
+    content: "";
+    background: url(assets/img/geo.png);
+    height: 20px;
+    width: 20px;
+    top: -2px;
+    left: -27px;
+}
+
+.geolocation__container {
+    padding: 30px;
+    height: 100%;
+    background: #1E1E1E;
+    border-radius: 35px;
+}
+
+.geolocation__list {
+    list-style-type: none;
+}
+
+.geolocation__item {
+}
+
+.geolocation__item + .geolocation__item {
+    margin-top: 10px;
+}
+
+.geolocation__text {
+}
+
+.geolocation__text--span {
+    color: #FFF;
+}
+
+.geolocation__maps {
+}
+
+.maps {
+}
+
+.maps__title {
+    margin-top: 20px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.maps__title::before {
+    position: absolute;
+    content: "";
+    background: url(assets/img/loc.png);
+    height: 20px;
+    width: 20px;
+    top: -2px;
+    left: -27px;
+}
+
+.maps__container {
+    width: 379px;
+    height: 130px;
+}
+
+.maps__map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.venator__webgl {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+
+.webgl {
+}
+
+.webgl__title {
+    position: relative;
+}
+
+.webgl__title::before {
+    position: absolute;
+    content: "";
+    background: url(assets/img/webGL.png);
+    height: 20px;
+    width: 20px;
+    top: -2px;
+    left: -27px;
+}
+
+.webgl__container {
+    padding: 30px;
+    height: 100%;
+    background: #1E1E1E;
+    border-radius: 35px;
+}
+
+.webgl__list {
+    list-style-type: none;
+}
+
+.webgl__item {
+}
+
+.webgl__item + .webgl__item {
+    margin-top: 10px;
+}
+
+.webgl__text {
+}
+
+.webgl__text--span {
+    color: #FFF;
+}
+
+.venator__fonts {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+}
+
+.fonts {
+}
+
+.fonts__title {
+    position: relative;
+}
+
+.fonts__title::before {
+    position: absolute;
+    content: "";
+    background: url(assets/img/fonts.png);
+    height: 20px;
+    width: 20px;
+    top: -2px;
+    left: -27px;
+}
+
+.fonts__container {
+    padding: 30px;
+    height: 100%;
+    background: #1E1E1E;
+    border-radius: 35px;
+}
+
+.fonts__text {
+}
+
+.venator__battery {
+
+}
+
+.battery {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.battery__title {
+    position: relative;
+}
+
+.battery__title::before {
+    position: absolute;
+    content: "";
+    background: url(assets/img/battery.png);
+    height: 8px;
+    width: 17px;
+    top: 2px;
+    left: -27px;
+}
+
+.battery__container {
+    padding: 30px;
+    height: 100%;
+    background: #1E1E1E;
+    border-radius: 35px;
+}
+
+.battery__list {
+    list-style-type: none;
+}
+
+.battery__item + .battery__item {
+    margin-top: 10px;
+}
+
+.battery__text {
+}
+
+.battery__text--span {
+    color: #FFF;
+}
+
+.venator__plugins {
+}
+
+.plugins {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.plugins__title {
+    position: relative;
+}
+
+.plugins__title::before {
+    position: absolute;
+    content: "";
+    background: url(assets/img/plugins.png);
+    height: 8px;
+    width: 17px;
+    top: 2px;
+    left: -27px;
+}
+
+.plugins__container {
+    padding: 30px;
+    height: 100%;
+    background: #1E1E1E;
+    border-radius: 35px;
+}
+
+.plugins__list {
+    list-style-type: none;
+}
+
+.plugins__item {
+}
+
+.plugins__item + .plugins__item {
+    margin-top: 10px;
+}
+
+.plugins__text {
+}
+
+.plugins__text--span {
+    color: #FFF;
+}
+
+.venator__canvas {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.canvas {
+}
+
+.canvas__title {
+    position: relative;
+}
+
+.canvas__title::before {
+    position: absolute;
+    content: "";
+    background: url(assets/img/canvas.png);
+    height: 17px;
+    width: 17px;
+    top: 2px;
+    left: -27px;
+}
+
+.canvas__container {
+    padding: 30px;
+    height: 100%;
+    background: #1E1E1E;
+    border-radius: 35px;
+}
+
+.canvas__list {
+    list-style-type: none;
+}
+
+.canvas__item {
+
+}
+
+.canvas__item + .canvas__item {
+    margin-top: 10px;
+}
+
+.canvas__text {
+}
+
+.canvas__text--span {
+    color: #FFF;
+}
